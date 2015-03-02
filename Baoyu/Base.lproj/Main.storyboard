@@ -98,11 +98,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="137" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-Mb-ucN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-Mb-ucN">
                                                     <rect key="frame" x="0.0" y="3" width="137" height="122"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyb-Ek-31P">
-                                                    <rect key="frame" x="47" y="126" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyb-Ek-31P">
+                                                    <rect key="frame" x="8" y="128" width="121" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天然彩石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1X-v4-Ccf">
+                                                    <rect key="frame" x="8" y="151" width="121" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,7 +116,6 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="0.97731879499999996" blue="0.2098101114" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="Dmk-Mb-ucN" secondAttribute="trailing" constant="-8" id="2S3-Nh-xaB"/>
                                             <constraint firstItem="Dmk-Mb-ucN" firstAttribute="leading" secondItem="552-pj-6lA" secondAttribute="leadingMargin" constant="-8" id="8U1-Xm-QmS"/>
@@ -207,4 +212,7 @@
             <point key="canvasLocation" x="2001" y="69"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="product3.jpg" width="750" height="750"/>
+    </resources>
 </document>
