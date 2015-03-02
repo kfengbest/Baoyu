@@ -1,18 +1,18 @@
 //
-//  YYViewController.m
+//  SingleProductDetailViewController.m
 //  Baoyu
 //
 //  Created by Kaven Feng on 3/2/15.
 //  Copyright (c) 2015 Kaven Feng. All rights reserved.
 //
 
-#import "YYViewController.h"
+#import "SingleProductDetailViewController.h"
 
-@interface YYViewController ()
+@interface SingleProductDetailViewController ()
 
 @end
 
-@implementation YYViewController
+@implementation SingleProductDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,19 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 20;
-}
-
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString* MyCellID = @"Cell1";
-    UICollectionViewCell* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
-    return newCell;
-
-}
 
 @end
