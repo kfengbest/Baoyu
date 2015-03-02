@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gAi-d7-O9d">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--得瑟-->
@@ -72,7 +73,45 @@
                     <view key="view" contentMode="scaleToFill" id="jik-9l-7ws">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bIU-es-GSd">
+                                <rect key="frame" x="16" y="68" width="568" height="29"/>
+                                <segments>
+                                    <segment title="搭配"/>
+                                    <segment title="单品"/>
+                                </segments>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PeK-Pf-HQD">
+                                <rect key="frame" x="16" y="99" width="568" height="444"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Jp-7e-U4K">
+                                    <size key="itemSize" width="136" height="154"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="552-pj-6lA">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="154"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PeK-Pf-HQD" firstAttribute="top" secondItem="bIU-es-GSd" secondAttribute="bottom" constant="3" id="Fqu-JP-nUf"/>
+                            <constraint firstItem="pAV-fv-FfP" firstAttribute="top" secondItem="PeK-Pf-HQD" secondAttribute="bottom" constant="8" id="GUe-9S-iJm"/>
+                            <constraint firstItem="PeK-Pf-HQD" firstAttribute="leading" secondItem="jik-9l-7ws" secondAttribute="leadingMargin" id="J9w-uN-ZS8"/>
+                            <constraint firstItem="bIU-es-GSd" firstAttribute="trailing" secondItem="jik-9l-7ws" secondAttribute="trailingMargin" id="QvI-lT-QW6"/>
+                            <constraint firstItem="bIU-es-GSd" firstAttribute="top" secondItem="XEV-c4-XeK" secondAttribute="bottom" constant="4" id="bHQ-xn-8bT"/>
+                            <constraint firstItem="PeK-Pf-HQD" firstAttribute="trailing" secondItem="jik-9l-7ws" secondAttribute="trailingMargin" id="cqL-4z-nlQ"/>
+                            <constraint firstItem="bIU-es-GSd" firstAttribute="leading" secondItem="jik-9l-7ws" secondAttribute="leadingMargin" id="yew-JV-pyg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wPr-4I-P5p"/>
                 </viewController>
