@@ -14,6 +14,12 @@
 		128930A91A9C379F0087A700 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128930A81A9C379F0087A700 /* Images.xcassets */; };
 		128930AC1A9C379F0087A700 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128930AA1A9C379F0087A700 /* LaunchScreen.xib */; };
 		128930B81A9C379F0087A700 /* BaoyuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930B71A9C379F0087A700 /* BaoyuTests.m */; };
+		128930C41AA489190087A700 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930C31AA489190087A700 /* Product.m */; };
+		128930C71AA489DE0087A700 /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930C61AA489DE0087A700 /* YYViewController.m */; };
+		128930CA1AA48A010087A700 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930C91AA48A010087A700 /* CartViewController.m */; };
+		128930CD1AA48A150087A700 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930CC1AA48A150087A700 /* MeViewController.m */; };
+		128930D01AA48A240087A700 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930CF1AA48A240087A700 /* AboutViewController.m */; };
+		128930D31AA48A5A0087A700 /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930D21AA48A5A0087A700 /* ShowsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,18 @@
 		128930B11A9C379F0087A700 /* BaoyuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaoyuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		128930B61A9C379F0087A700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		128930B71A9C379F0087A700 /* BaoyuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoyuTests.m; sourceTree = "<group>"; };
+		128930C21AA489190087A700 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		128930C31AA489190087A700 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		128930C51AA489DE0087A700 /* YYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYViewController.h; sourceTree = "<group>"; };
+		128930C61AA489DE0087A700 /* YYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
+		128930C81AA48A010087A700 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		128930C91AA48A010087A700 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		128930CB1AA48A150087A700 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		128930CC1AA48A150087A700 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		128930CE1AA48A240087A700 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		128930CF1AA48A240087A700 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		128930D11AA48A5A0087A700 /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
+		128930D21AA48A5A0087A700 /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,7 @@
 		1289309A1A9C379F0087A700 /* Baoyu */ = {
 			isa = PBXGroup;
 			children = (
+				128930C11AA488DE0087A700 /* Model */,
 				1289309F1A9C379F0087A700 /* AppDelegate.h */,
 				128930A01A9C379F0087A700 /* AppDelegate.m */,
 				128930A21A9C379F0087A700 /* ViewController.h */,
@@ -89,6 +108,16 @@
 				128930A81A9C379F0087A700 /* Images.xcassets */,
 				128930AA1A9C379F0087A700 /* LaunchScreen.xib */,
 				1289309B1A9C379F0087A700 /* Supporting Files */,
+				128930C51AA489DE0087A700 /* YYViewController.h */,
+				128930C61AA489DE0087A700 /* YYViewController.m */,
+				128930C81AA48A010087A700 /* CartViewController.h */,
+				128930C91AA48A010087A700 /* CartViewController.m */,
+				128930CB1AA48A150087A700 /* MeViewController.h */,
+				128930CC1AA48A150087A700 /* MeViewController.m */,
+				128930CE1AA48A240087A700 /* AboutViewController.h */,
+				128930CF1AA48A240087A700 /* AboutViewController.m */,
+				128930D11AA48A5A0087A700 /* ShowsViewController.h */,
+				128930D21AA48A5A0087A700 /* ShowsViewController.m */,
 			);
 			path = Baoyu;
 			sourceTree = "<group>";
@@ -117,6 +146,15 @@
 				128930B61A9C379F0087A700 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		128930C11AA488DE0087A700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				128930C21AA489190087A700 /* Product.h */,
+				128930C31AA489190087A700 /* Product.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128930C71AA489DE0087A700 /* YYViewController.m in Sources */,
 				128930A41A9C379F0087A700 /* ViewController.m in Sources */,
+				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
+				128930CD1AA48A150087A700 /* MeViewController.m in Sources */,
+				128930D31AA48A5A0087A700 /* ShowsViewController.m in Sources */,
+				128930C41AA489190087A700 /* Product.m in Sources */,
 				128930A11A9C379F0087A700 /* AppDelegate.m in Sources */,
+				128930CA1AA48A010087A700 /* CartViewController.m in Sources */,
 				1289309E1A9C379F0087A700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +458,7 @@
 				128930BD1A9C379F0087A700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		128930BE1A9C379F0087A700 /* Build configuration list for PBXNativeTarget "BaoyuTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +467,7 @@
 				128930C01A9C379F0087A700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
