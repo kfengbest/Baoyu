@@ -25,6 +25,8 @@
 		128930DC1AA4A8490087A700 /* product2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 128930D81AA4A8490087A700 /* product2.jpg */; };
 		128930DD1AA4A8490087A700 /* product3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 128930D91AA4A8490087A700 /* product3.jpg */; };
 		128930DE1AA4A8490087A700 /* product4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 128930DA1AA4A8490087A700 /* product4.jpg */; };
+		128930E01AA4A9B40087A700 /* favory.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930DF1AA4A9B40087A700 /* favory.png */; };
+		128930E21AA4A9DE0087A700 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930E11AA4A9DE0087A700 /* like.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		128930D81AA4A8490087A700 /* product2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product2.jpg; sourceTree = "<group>"; };
 		128930D91AA4A8490087A700 /* product3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product3.jpg; sourceTree = "<group>"; };
 		128930DA1AA4A8490087A700 /* product4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product4.jpg; sourceTree = "<group>"; };
+		128930DF1AA4A9B40087A700 /* favory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favory.png; sourceTree = "<group>"; };
+		128930E11AA4A9DE0087A700 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		1289309B1A9C379F0087A700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				128930E11AA4A9DE0087A700 /* like.png */,
+				128930DF1AA4A9B40087A700 /* favory.png */,
 				128930D71AA4A8490087A700 /* product1.jpg */,
 				128930D81AA4A8490087A700 /* product2.jpg */,
 				128930D91AA4A8490087A700 /* product3.jpg */,
@@ -254,9 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128930E01AA4A9B40087A700 /* favory.png in Resources */,
 				128930A71A9C379F0087A700 /* Main.storyboard in Resources */,
 				128930AC1A9C379F0087A700 /* LaunchScreen.xib in Resources */,
 				128930A91A9C379F0087A700 /* Images.xcassets in Resources */,
+				128930E21AA4A9DE0087A700 /* like.png in Resources */,
 				128930DE1AA4A8490087A700 /* product4.jpg in Resources */,
 				128930DB1AA4A8490087A700 /* product1.jpg in Resources */,
 				128930DD1AA4A8490087A700 /* product3.jpg in Resources */,
