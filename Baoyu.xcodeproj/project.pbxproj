@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124D72F41AA67D540062F81B /* SetMyFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F31AA67D540062F81B /* SetMyFeatureViewController.m */; };
+		124D72F71AA67D7E0062F81B /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F61AA67D7E0062F81B /* MyOrderViewController.m */; };
+		124D72FA1AA67D990062F81B /* MyFavoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F91AA67D990062F81B /* MyFavoriesViewController.m */; };
+		124D72FD1AA67DB20062F81B /* MyShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72FC1AA67DB20062F81B /* MyShowsViewController.m */; };
 		1289309E1A9C379F0087A700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289309D1A9C379F0087A700 /* main.m */; };
 		128930A11A9C379F0087A700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930A01A9C379F0087A700 /* AppDelegate.m */; };
 		128930A41A9C379F0087A700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930A31A9C379F0087A700 /* ViewController.m */; };
@@ -46,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		124D72F21AA67D540062F81B /* SetMyFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetMyFeatureViewController.h; sourceTree = "<group>"; };
+		124D72F31AA67D540062F81B /* SetMyFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetMyFeatureViewController.m; sourceTree = "<group>"; };
+		124D72F51AA67D7E0062F81B /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		124D72F61AA67D7E0062F81B /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		124D72F81AA67D990062F81B /* MyFavoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriesViewController.h; sourceTree = "<group>"; };
+		124D72F91AA67D990062F81B /* MyFavoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriesViewController.m; sourceTree = "<group>"; };
+		124D72FB1AA67DB20062F81B /* MyShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyShowsViewController.h; sourceTree = "<group>"; };
+		124D72FC1AA67DB20062F81B /* MyShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyShowsViewController.m; sourceTree = "<group>"; };
 		128930981A9C379F0087A700 /* Baoyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baoyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1289309C1A9C379F0087A700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1289309D1A9C379F0087A700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +159,14 @@
 				128930D21AA48A5A0087A700 /* ShowsViewController.m */,
 				128930D41AA494230087A700 /* SingleProductDetailViewController.h */,
 				128930D51AA494230087A700 /* SingleProductDetailViewController.m */,
+				124D72F21AA67D540062F81B /* SetMyFeatureViewController.h */,
+				124D72F31AA67D540062F81B /* SetMyFeatureViewController.m */,
+				124D72F51AA67D7E0062F81B /* MyOrderViewController.h */,
+				124D72F61AA67D7E0062F81B /* MyOrderViewController.m */,
+				124D72F81AA67D990062F81B /* MyFavoriesViewController.h */,
+				124D72F91AA67D990062F81B /* MyFavoriesViewController.m */,
+				124D72FB1AA67DB20062F81B /* MyShowsViewController.h */,
+				124D72FC1AA67DB20062F81B /* MyShowsViewController.m */,
 			);
 			path = Baoyu;
 			sourceTree = "<group>";
@@ -313,11 +333,15 @@
 				128930C71AA489DE0087A700 /* YYViewController.m in Sources */,
 				128930A41A9C379F0087A700 /* ViewController.m in Sources */,
 				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
+				124D72F71AA67D7E0062F81B /* MyOrderViewController.m in Sources */,
 				128930CD1AA48A150087A700 /* MeViewController.m in Sources */,
 				128930D31AA48A5A0087A700 /* ShowsViewController.m in Sources */,
+				124D72F41AA67D540062F81B /* SetMyFeatureViewController.m in Sources */,
 				128930C41AA489190087A700 /* Product.m in Sources */,
 				128930A11A9C379F0087A700 /* AppDelegate.m in Sources */,
+				124D72FD1AA67DB20062F81B /* MyShowsViewController.m in Sources */,
 				128930D61AA494230087A700 /* SingleProductDetailViewController.m in Sources */,
+				124D72FA1AA67D990062F81B /* MyFavoriesViewController.m in Sources */,
 				128930CA1AA48A010087A700 /* CartViewController.m in Sources */,
 				1289309E1A9C379F0087A700 /* main.m in Sources */,
 			);
