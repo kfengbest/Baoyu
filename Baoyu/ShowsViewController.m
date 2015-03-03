@@ -9,6 +9,7 @@
 #import "ShowsViewController.h"
 
 @interface ShowsViewController ()
+@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
 
@@ -33,6 +34,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)onSegmentChanged:(id)sender {
+    [self.soldCollectionView reloadData];
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -42,7 +46,18 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* MyCellID = @"SoldCell";
+    static NSString* KnowlegeCell = @"KnowlegeCell";
+    static NSString* CustomerShowCell = @"CustomerShowCell";
+    static NSString* SoldCell = @"SoldCell";
+
+    NSString* MyCellID = KnowlegeCell;
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        MyCellID = KnowlegeCell;
+    }else if(self.segmentedControl.selectedSegmentIndex == 1){
+        MyCellID = CustomerShowCell;
+    }else if(self.segmentedControl.selectedSegmentIndex == 2){
+        MyCellID = SoldCell;
+    }
     UICollectionViewCell* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
     return newCell;
     
