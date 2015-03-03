@@ -31,6 +31,8 @@
 		128930E61AA5E6ED0087A700 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930E51AA5E6ED0087A700 /* trash.png */; };
 		128930E81AA5EA3F0087A700 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930E71AA5EA3F0087A700 /* about.png */; };
 		128930EA1AA5EA7A0087A700 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930E91AA5EA7A0087A700 /* cross.png */; };
+		128930EC1AA5EB670087A700 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930EB1AA5EB670087A700 /* setting.png */; };
+		128930EE1AA5EBEA0087A700 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930ED1AA5EBEA0087A700 /* camera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		128930E51AA5E6ED0087A700 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
 		128930E71AA5EA3F0087A700 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		128930E91AA5EA7A0087A700 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		128930EB1AA5EB670087A700 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		128930ED1AA5EBEA0087A700 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		1289309B1A9C379F0087A700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				128930ED1AA5EBEA0087A700 /* camera.png */,
+				128930EB1AA5EB670087A700 /* setting.png */,
 				128930E91AA5EA7A0087A700 /* cross.png */,
 				128930E71AA5EA3F0087A700 /* about.png */,
 				128930E51AA5E6ED0087A700 /* trash.png */,
@@ -280,8 +286,10 @@
 				128930AC1A9C379F0087A700 /* LaunchScreen.xib in Resources */,
 				128930EA1AA5EA7A0087A700 /* cross.png in Resources */,
 				128930A91A9C379F0087A700 /* Images.xcassets in Resources */,
+				128930EC1AA5EB670087A700 /* setting.png in Resources */,
 				128930E21AA4A9DE0087A700 /* like.png in Resources */,
 				128930DE1AA4A8490087A700 /* product4.jpg in Resources */,
+				128930EE1AA5EBEA0087A700 /* camera.png in Resources */,
 				128930DB1AA4A8490087A700 /* product1.jpg in Resources */,
 				128930DD1AA4A8490087A700 /* product3.jpg in Resources */,
 				128930DC1AA4A8490087A700 /* product2.jpg in Resources */,
