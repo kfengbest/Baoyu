@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CartViewController : UIViewController
+@interface CartViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@property (strong, nonatomic) IBOutlet UICollectionView *cartCollectionView;
 
 @end
