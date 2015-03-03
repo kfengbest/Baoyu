@@ -9,8 +9,11 @@
 #import "YYViewController.h"
 
 @interface YYViewController ()
+@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
+
+
 
 @implementation YYViewController
 
@@ -33,6 +36,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)onSegmentedChanged:(id)sender {
+    [self.SingleCollectionView reloadData];
+    
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -42,7 +49,13 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* MyCellID = @"Cell1";
+    static NSString* SingleCellID = @"SimpleCell";
+    static NSString* CompositeCellID = @"CompositeCell";
+    
+    NSString* MyCellID = CompositeCellID;
+    if (self.segmentedControl.selectedSegmentIndex == 1) {
+        MyCellID =  SingleCellID;
+    }
     UICollectionViewCell* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
     return newCell;
 

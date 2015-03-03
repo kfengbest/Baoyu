@@ -398,6 +398,9 @@
                                     <segment title="搭配"/>
                                     <segment title="单品"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentedChanged:" destination="AEq-IL-bxx" eventType="valueChanged" id="Mbk-WI-BCQ"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PeK-Pf-HQD">
                                 <rect key="frame" x="16" y="99" width="568" height="444"/>
@@ -409,7 +412,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell1" id="552-pj-6lA">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimpleCell" id="552-pj-6lA">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -456,6 +459,64 @@
                                             <segue destination="rFJ-0C-75s" kind="show" id="um4-Tt-Atk"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompositeCell" id="Zuj-IH-TjA">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="137" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-tc-XSt">
+                                                    <rect key="frame" x="0.0" y="3" width="137" height="64"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAT-Ee-lyZ">
+                                                    <rect key="frame" x="103" y="8" width="28" height="32"/>
+                                                    <state key="normal" image="like.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSv-OH-xB7">
+                                                    <rect key="frame" x="104" y="40" width="29" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="oWZ-jg-v0J"/>
+                                                    </constraints>
+                                                    <state key="normal" image="favory.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="product1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="klt-LI-yCr">
+                                                    <rect key="frame" x="0.0" y="68" width="70" height="69"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="product2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-U6-G4m">
+                                                    <rect key="frame" x="65" y="68" width="72" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="68" id="2bu-t5-9wi"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="klt-LI-yCr" firstAttribute="height" secondItem="DEg-U6-G4m" secondAttribute="height" constant="1" id="7XQ-QS-Eqp"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ptm-tc-XSt" secondAttribute="bottom" constant="105" id="AqG-Ab-cef"/>
+                                            <constraint firstItem="ptm-tc-XSt" firstAttribute="leading" secondItem="Zuj-IH-TjA" secondAttribute="leadingMargin" constant="-8" id="B1J-U3-qjm"/>
+                                            <constraint firstItem="DEg-U6-G4m" firstAttribute="trailing" secondItem="ptm-tc-XSt" secondAttribute="trailing" id="Ire-ZQ-Tpv"/>
+                                            <constraint firstItem="klt-LI-yCr" firstAttribute="width" secondItem="DEg-U6-G4m" secondAttribute="width" constant="-2" id="JBy-zB-hxb"/>
+                                            <constraint firstItem="aAT-Ee-lyZ" firstAttribute="top" secondItem="Zuj-IH-TjA" secondAttribute="topMargin" id="QdY-U4-mpE"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="aAT-Ee-lyZ" secondAttribute="trailing" constant="-2" id="SiR-3p-F8A"/>
+                                            <constraint firstItem="ptm-tc-XSt" firstAttribute="top" secondItem="Zuj-IH-TjA" secondAttribute="topMargin" constant="-5" id="Zjh-MB-Kdp"/>
+                                            <constraint firstItem="klt-LI-yCr" firstAttribute="leading" secondItem="Zuj-IH-TjA" secondAttribute="leadingMargin" constant="-8" id="btW-Wl-6Uz"/>
+                                            <constraint firstItem="rSv-OH-xB7" firstAttribute="top" secondItem="aAT-Ee-lyZ" secondAttribute="bottom" id="cOw-qA-oxb"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="rSv-OH-xB7" secondAttribute="trailing" constant="-4" id="ccl-Be-hkz"/>
+                                            <constraint firstItem="DEg-U6-G4m" firstAttribute="leading" secondItem="klt-LI-yCr" secondAttribute="trailing" constant="-5" id="hQW-CZ-AD9"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ptm-tc-XSt" secondAttribute="trailing" constant="-8" id="i3X-xC-kEV"/>
+                                            <constraint firstItem="DEg-U6-G4m" firstAttribute="top" secondItem="klt-LI-yCr" secondAttribute="top" id="kxj-08-K1P"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="klt-LI-yCr" secondAttribute="bottom" constant="36" id="oOp-Tz-kiO"/>
+                                            <constraint firstItem="aAT-Ee-lyZ" firstAttribute="leading" secondItem="Zuj-IH-TjA" secondAttribute="leadingMargin" constant="95" id="qRF-Xj-7qI"/>
+                                            <constraint firstItem="rSv-OH-xB7" firstAttribute="leading" secondItem="Zuj-IH-TjA" secondAttribute="leadingMargin" constant="96" id="rmp-A0-LDn"/>
+                                            <constraint firstItem="DEg-U6-G4m" firstAttribute="top" secondItem="rSv-OH-xB7" secondAttribute="bottom" constant="1" id="tGT-E2-XBZ"/>
+                                        </constraints>
+                                    </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="AEq-IL-bxx" id="7MN-gI-zXI"/>
@@ -480,6 +541,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="SingleCollectionView" destination="PeK-Pf-HQD" id="wdf-SB-S9I"/>
+                        <outlet property="segmentedControl" destination="bIU-es-GSd" id="Quc-T3-9E8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwr-Mh-NGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -630,7 +692,9 @@
         <image name="check.png" width="50" height="50"/>
         <image name="favory.png" width="50" height="50"/>
         <image name="like.png" width="50" height="50"/>
+        <image name="product1.jpg" width="750" height="750"/>
         <image name="product2.jpg" width="750" height="750"/>
+        <image name="product3.jpg" width="750" height="750"/>
         <image name="product4.jpg" width="750" height="750"/>
         <image name="setting.png" width="50" height="50"/>
         <image name="trash.png" width="50" height="50"/>
