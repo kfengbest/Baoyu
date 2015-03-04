@@ -65,7 +65,7 @@
 {
     
     if (self.segmentedControl.selectedSegmentIndex == 0) {
-        return CGSizeMake(320, 250);
+        return CGSizeMake(300, 250);
     }else if(self.segmentedControl.selectedSegmentIndex == 1){
         return CGSizeMake(130, 180);
     }
