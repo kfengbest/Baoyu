@@ -753,6 +753,11 @@
                                             <constraint firstItem="DEg-U6-G4m" firstAttribute="top" secondItem="rSv-OH-xB7" secondAttribute="bottom" constant="1" id="tGT-E2-XBZ"/>
                                         </constraints>
                                         <size key="customSize" width="298" height="238"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="orA-Pi-gYX"/>
+                                            </mask>
+                                        </variation>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompositeCell2" id="WmE-6s-Big">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
