@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YYViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface YYViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) IBOutlet UICollectionView *SingleCollectionView;
 
 @end

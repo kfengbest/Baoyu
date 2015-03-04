@@ -61,4 +61,17 @@
 
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        return CGSizeMake(320, 250);
+    }else if(self.segmentedControl.selectedSegmentIndex == 1){
+        return CGSizeMake(130, 180);
+    }
+        
+    return CGSizeMake(100, 100);
+}
+
+
 @end

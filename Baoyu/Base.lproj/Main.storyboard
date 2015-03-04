@@ -692,20 +692,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="251"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="298" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-tc-XSt">
-                                                    <rect key="frame" x="0.0" y="3" width="353" height="135"/>
+                                                    <rect key="frame" x="0.0" y="3" width="298" height="122"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAT-Ee-lyZ">
-                                                    <rect key="frame" x="103" y="8" width="244" height="32"/>
+                                                    <rect key="frame" x="103" y="8" width="189" height="32"/>
                                                     <state key="normal" image="like.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSv-OH-xB7">
-                                                    <rect key="frame" x="104" y="40" width="245" height="27"/>
+                                                    <rect key="frame" x="104" y="40" width="190" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="oWZ-jg-v0J"/>
                                                     </constraints>
@@ -752,7 +752,7 @@
                                             <constraint firstItem="rSv-OH-xB7" firstAttribute="leading" secondItem="Zuj-IH-TjA" secondAttribute="leadingMargin" constant="96" id="rmp-A0-LDn"/>
                                             <constraint firstItem="DEg-U6-G4m" firstAttribute="top" secondItem="rSv-OH-xB7" secondAttribute="bottom" constant="1" id="tGT-E2-XBZ"/>
                                         </constraints>
-                                        <size key="customSize" width="353" height="251"/>
+                                        <size key="customSize" width="298" height="238"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompositeCell2" id="WmE-6s-Big">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -843,7 +843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwr-Mh-NGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2882" y="69"/>
+            <point key="canvasLocation" x="2827" y="69"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cyZ-sz-qAX">
