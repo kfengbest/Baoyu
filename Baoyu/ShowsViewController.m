@@ -10,6 +10,9 @@
 
 @interface ShowsViewController ()
 @property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
+@property (strong, nonatomic) IBOutlet UIView *knowledgeView;
+@property (strong, nonatomic) IBOutlet UIView *customersShowView;
+@property (strong, nonatomic) IBOutlet UIView *soldView;
 
 @end
 
@@ -35,9 +38,24 @@
 }
 */
 - (IBAction)onSegmentChanged:(id)sender {
-    [self.soldCollectionView reloadData];
+    //[self.soldCollectionView reloadData];
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        self.knowledgeView.hidden = NO;
+        self.customersShowView.hidden = YES;
+        self.soldView.hidden = YES;
+    }else if (self.segmentedControl.selectedSegmentIndex == 1){
+        self.customersShowView.hidden = NO;
+        self.knowledgeView.hidden = YES;
+        self.soldView.hidden = YES;
+    }else if(self.segmentedControl.selectedSegmentIndex == 2){
+        self.soldView.hidden = NO;
+        self.knowledgeView.hidden = YES;
+        self.customersShowView.hidden = YES;
+    }
 }
 
+/*
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 20;
@@ -62,5 +80,5 @@
     return newCell;
     
 }
-
+*/
 @end
