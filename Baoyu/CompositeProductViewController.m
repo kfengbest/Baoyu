@@ -1,22 +1,18 @@
 //
-//  YYViewController.m
+//  CompositeProductViewController.m
 //  Baoyu
 //
-//  Created by Kaven Feng on 3/2/15.
+//  Created by Kaven Feng on 3/5/15.
 //  Copyright (c) 2015 Kaven Feng. All rights reserved.
 //
 
-#import "YYViewController.h"
+#import "CompositeProductViewController.h"
 
-@interface YYViewController ()
-@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
-@property (strong, nonatomic) IBOutlet UIView *compositeProductView;
-@property (strong, nonatomic) IBOutlet UIView *singleProductView;
+@interface CompositeProductViewController ()
+
 @end
 
-
-
-@implementation YYViewController
+@implementation CompositeProductViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,42 +33,19 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)onSegmentedChanged:(id)sender {
-    
-}
 
-/*
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return 6;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* SingleCellID = @"SimpleCell";
-    static NSString* CompositeCellID = @"CompositeCell";
-    
-    NSString* MyCellID = CompositeCellID;
-    if (self.segmentedControl.selectedSegmentIndex == 1) {
-        MyCellID =  SingleCellID;
-    }
+    static NSString* MyCellID = @"CompositedCell1";
     UICollectionViewCell* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
     return newCell;
-
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
     
-    if (self.segmentedControl.selectedSegmentIndex == 0) {
-        return CGSizeMake(300, 250);
-    }else if(self.segmentedControl.selectedSegmentIndex == 1){
-        return CGSizeMake(130, 180);
-    }
-        
-    return CGSizeMake(100, 100);
 }
-*/
 
 @end
