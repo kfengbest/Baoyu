@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Shows View Controller-->
+        <!--得瑟-->
         <scene sceneID="CcZ-ei-5aB">
             <objects>
                 <viewController id="Vbx-wR-jN0" customClass="ShowsViewController" sceneMemberID="viewController">
@@ -70,9 +70,7 @@
                             <constraint firstAttribute="centerX" secondItem="MEY-9Z-zwE" secondAttribute="centerX" id="yya-VM-SzC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WR6-DB-eEL">
-                        <barButtonItem key="leftBarButtonItem" image="about.png" id="FF3-gV-hLC"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="得瑟" id="WR6-DB-eEL"/>
                     <connections>
                         <outlet property="customersShowView" destination="MEY-9Z-zwE" id="7OG-NG-hBu"/>
                         <outlet property="knowledgeView" destination="xSQ-ml-CMd" id="Lju-NH-4Nv"/>
@@ -84,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="2883" y="731"/>
         </scene>
-        <!--Cart View Controller-->
+        <!--购物车-->
         <scene sceneID="WU3-Wq-eNw">
             <objects>
                 <viewController id="1MM-oj-VOg" customClass="CartViewController" sceneMemberID="viewController">
@@ -219,6 +217,9 @@
                                 <state key="normal" title="确认订单">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fzv-AW-S8v" kind="show" id="3Ek-GE-KvE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -253,9 +254,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="wbW-Ej-adT">
-                        <barButtonItem key="leftBarButtonItem" image="about.png" id="Tnb-ed-pqV"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="购物车" id="wbW-Ej-adT"/>
                     <connections>
                         <outlet property="cartCollectionView" destination="xdZ-SW-di0" id="DbL-87-JW6"/>
                     </connections>
@@ -315,6 +314,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzV-aI-OqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4267" y="2152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HjB-7n-vJQ">
+            <objects>
+                <viewController id="fzv-AW-S8v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIs-Bt-vNx"/>
+                        <viewControllerLayoutGuide type="bottom" id="lSy-iP-nGG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Lo-VL-gu2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="支付页面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y28-3e-tlW">
+                                <rect key="frame" x="82" y="188" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SW-mW-8hQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496" y="1479"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Zc-Rj-wNv">
@@ -526,7 +551,7 @@
             </objects>
             <point key="canvasLocation" x="3621" y="3484"/>
         </scene>
-        <!--View Controller-->
+        <!--YY-->
         <scene sceneID="HYA-y5-iEO">
             <objects>
                 <viewController id="AEq-IL-bxx" customClass="YYViewController" sceneMemberID="viewController">
@@ -576,8 +601,7 @@
                             <constraint firstItem="bIU-es-GSd" firstAttribute="leading" secondItem="jik-9l-7ws" secondAttribute="leadingMargin" id="yew-JV-pyg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wPr-4I-P5p">
-                        <barButtonItem key="leftBarButtonItem" image="about.png" id="qGn-5R-wdG"/>
+                    <navigationItem key="navigationItem" title="YY" id="wPr-4I-P5p">
                         <barButtonItem key="rightBarButtonItem" image="setting.png" id="99d-qw-dc5"/>
                     </navigationItem>
                     <connections>
@@ -590,7 +614,7 @@
             </objects>
             <point key="canvasLocation" x="2827" y="69"/>
         </scene>
-        <!--Table View Controller-->
+        <!--我的-->
         <scene sceneID="uId-mY-hcL">
             <objects>
                 <tableViewController id="bVc-nV-Dnd" sceneMemberID="viewController">
@@ -753,7 +777,7 @@
                             <outlet property="delegate" destination="bVc-nV-Dnd" id="pR8-ng-zm4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MJk-r4-Jla"/>
+                    <navigationItem key="navigationItem" title="我的" id="MJk-r4-Jla"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB4-5r-MrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1489,7 +1513,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about.png" width="50" height="50"/>
         <image name="camera.png" width="50" height="50"/>
         <image name="check.png" width="50" height="50"/>
         <image name="favory.png" width="50" height="50"/>
