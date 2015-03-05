@@ -1377,12 +1377,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSM-sf-PP4">
                                 <rect key="frame" x="0.0" y="0.0" width="588" height="447"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-uO-20f">
-                                        <rect key="frame" x="202" y="8" width="184" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="mFw-Se-Epr"/>
-                                        </constraints>
-                                    </imageView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW8-OM-f0o">
                                         <rect key="frame" x="8" y="186" width="572" height="95"/>
                                         <constraints>
@@ -1398,6 +1392,12 @@
                                             <segue destination="ZsK-0j-zHK" kind="embed" id="eyP-dV-8sT"/>
                                         </connections>
                                     </containerView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-uO-20f">
+                                        <rect key="frame" x="202" y="8" width="184" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="mFw-Se-Epr"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="mW8-OM-f0o" firstAttribute="leading" secondItem="6RV-DL-Abd" secondAttribute="leading" id="7It-fc-tbS"/>
@@ -1405,7 +1405,6 @@
                                     <constraint firstItem="2Wb-uO-20f" firstAttribute="centerX" secondItem="mW8-OM-f0o" secondAttribute="centerX" id="BmK-Jx-adw"/>
                                     <constraint firstItem="mW8-OM-f0o" firstAttribute="leading" secondItem="2Wb-uO-20f" secondAttribute="trailing" constant="-378" id="CC5-1a-7ux"/>
                                     <constraint firstAttribute="bottom" secondItem="6RV-DL-Abd" secondAttribute="bottom" constant="8" id="F6G-Ev-mkB"/>
-                                    <constraint firstItem="2Wb-uO-20f" firstAttribute="leading" secondItem="lSM-sf-PP4" secondAttribute="leading" constant="202" id="GQ1-tZ-X5z"/>
                                     <constraint firstItem="2Wb-uO-20f" firstAttribute="top" secondItem="lSM-sf-PP4" secondAttribute="top" constant="8" id="HPs-B8-GCm"/>
                                     <constraint firstAttribute="trailing" secondItem="6RV-DL-Abd" secondAttribute="trailing" constant="8" id="Ijw-lA-F2k"/>
                                     <constraint firstItem="6RV-DL-Abd" firstAttribute="bottom" secondItem="lSM-sf-PP4" secondAttribute="bottomMargin" id="Xbn-Jp-U2o"/>
@@ -1414,6 +1413,7 @@
                                     <constraint firstItem="mW8-OM-f0o" firstAttribute="leading" secondItem="lSM-sf-PP4" secondAttribute="leading" constant="8" id="fji-Dg-cwI"/>
                                     <constraint firstItem="mW8-OM-f0o" firstAttribute="top" secondItem="2Wb-uO-20f" secondAttribute="bottom" constant="38" id="gzP-9S-rMj"/>
                                     <constraint firstItem="mW8-OM-f0o" firstAttribute="trailing" secondItem="6RV-DL-Abd" secondAttribute="trailing" id="hB9-Cd-Fy6"/>
+                                    <constraint firstItem="2Wb-uO-20f" firstAttribute="leading" secondItem="lSM-sf-PP4" secondAttribute="leading" constant="202" id="o3V-ZC-nAg"/>
                                     <constraint firstAttribute="bottom" secondItem="2Wb-uO-20f" secondAttribute="bottom" constant="299" id="sw4-dv-d9k"/>
                                     <constraint firstAttribute="trailing" secondItem="mW8-OM-f0o" secondAttribute="trailing" constant="8" id="t9u-5F-ZGO"/>
                                 </constraints>
@@ -1422,6 +1422,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="lSM-sf-PP4" secondAttribute="centerY" id="E6q-Co-z8I"/>
+                            <constraint firstItem="lSM-sf-PP4" firstAttribute="top" secondItem="keW-A8-ixX" secondAttribute="bottom" id="auR-qU-EbO"/>
                             <constraint firstAttribute="centerX" secondItem="lSM-sf-PP4" secondAttribute="centerX" id="gvP-sK-y0l"/>
                             <constraint firstItem="lSM-sf-PP4" firstAttribute="top" secondItem="keW-A8-ixX" secondAttribute="bottom" id="oWL-gl-v9H"/>
                             <constraint firstItem="lSM-sf-PP4" firstAttribute="leading" secondItem="1gF-KC-eMk" secondAttribute="leadingMargin" constant="-16" id="svk-JX-YGA"/>
@@ -1520,18 +1521,18 @@
                         <viewControllerLayoutGuide type="bottom" id="GaV-XO-Qj6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wII-hY-czI">
-                        <rect key="frame" x="0.0" y="0.0" width="588" height="447"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bTo-AA-3k7">
-                                <rect key="frame" x="194" y="8" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="product1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bTo-AA-3k7">
+                                <rect key="frame" x="200" y="8" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="hQd-ZQ-EaL"/>
                                     <constraint firstAttribute="height" constant="200" id="nP0-0K-AAj"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-af-6o8">
-                                <rect key="frame" x="194" y="216" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="product2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-af-6o8">
+                                <rect key="frame" x="200" y="216" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="ED6-hD-dbM"/>
                                     <constraint firstAttribute="width" constant="200" id="WSc-Cy-uhv"/>
@@ -1549,7 +1550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-k6-NlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4273" y="-456.5"/>
+            <point key="canvasLocation" x="4438" y="-576"/>
         </scene>
         <!--Composite Product View Controller-->
         <scene sceneID="jzA-mg-Zc6">
@@ -1599,7 +1600,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="S7C-1X-8H0" kind="show" id="was-ZZ-lZY"/>
+                                                        <segue destination="rds-5g-NNh" kind="show" id="YL5-ie-eFS"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="天然的彩石，很好看" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O08-wm-eZl">
@@ -1943,4 +1944,7 @@
         <image name="setting.png" width="50" height="50"/>
         <image name="trash.png" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YL5-ie-eFS"/>
+    </inferredMetricsTieBreakers>
 </document>
