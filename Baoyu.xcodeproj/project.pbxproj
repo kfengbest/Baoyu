@@ -18,6 +18,8 @@
 		124D730A1AA884000062F81B /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 124D73091AA884000062F81B /* more.png */; };
 		124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D730C1AA8849B0062F81B /* CompositeProductViewController.m */; };
 		124D73101AA888100062F81B /* SingleProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D730F1AA888100062F81B /* SingleProductViewController.m */; };
+		124D73131AA89A3C0062F81B /* LikesInProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73121AA89A3C0062F81B /* LikesInProductDetailViewController.m */; };
+		124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73151AA89A530062F81B /* CommentsInProductDetailsViewController.m */; };
 		1289309E1A9C379F0087A700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289309D1A9C379F0087A700 /* main.m */; };
 		128930A11A9C379F0087A700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930A01A9C379F0087A700 /* AppDelegate.m */; };
 		128930A41A9C379F0087A700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128930A31A9C379F0087A700 /* ViewController.m */; };
@@ -77,6 +79,10 @@
 		124D730C1AA8849B0062F81B /* CompositeProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeProductViewController.m; sourceTree = "<group>"; };
 		124D730E1AA888100062F81B /* SingleProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleProductViewController.h; sourceTree = "<group>"; };
 		124D730F1AA888100062F81B /* SingleProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleProductViewController.m; sourceTree = "<group>"; };
+		124D73111AA89A3C0062F81B /* LikesInProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikesInProductDetailViewController.h; sourceTree = "<group>"; };
+		124D73121AA89A3C0062F81B /* LikesInProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikesInProductDetailViewController.m; sourceTree = "<group>"; };
+		124D73141AA89A530062F81B /* CommentsInProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsInProductDetailsViewController.h; sourceTree = "<group>"; };
+		124D73151AA89A530062F81B /* CommentsInProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsInProductDetailsViewController.m; sourceTree = "<group>"; };
 		128930981A9C379F0087A700 /* Baoyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baoyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1289309C1A9C379F0087A700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1289309D1A9C379F0087A700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +169,10 @@
 				128930A21A9C379F0087A700 /* ViewController.h */,
 				128930A31A9C379F0087A700 /* ViewController.m */,
 				128930A51A9C379F0087A700 /* Main.storyboard */,
+				124D73111AA89A3C0062F81B /* LikesInProductDetailViewController.h */,
+				124D73121AA89A3C0062F81B /* LikesInProductDetailViewController.m */,
+				124D73141AA89A530062F81B /* CommentsInProductDetailsViewController.h */,
+				124D73151AA89A530062F81B /* CommentsInProductDetailsViewController.m */,
 				124D730E1AA888100062F81B /* SingleProductViewController.h */,
 				124D730F1AA888100062F81B /* SingleProductViewController.m */,
 				124D730B1AA8849B0062F81B /* CompositeProductViewController.h */,
@@ -367,6 +377,7 @@
 				128930A41A9C379F0087A700 /* ViewController.m in Sources */,
 				124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */,
 				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
+				124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */,
 				124D73051AA730280062F81B /* KnowledgeViewController.m in Sources */,
 				124D73101AA888100062F81B /* SingleProductViewController.m in Sources */,
 				124D72F71AA67D7E0062F81B /* MyOrderViewController.m in Sources */,
@@ -376,6 +387,7 @@
 				124D73081AA7316A0062F81B /* CustomersShowViewController.m in Sources */,
 				124D72F41AA67D540062F81B /* SetMyFeatureViewController.m in Sources */,
 				128930C41AA489190087A700 /* Product.m in Sources */,
+				124D73131AA89A3C0062F81B /* LikesInProductDetailViewController.m in Sources */,
 				128930A11A9C379F0087A700 /* AppDelegate.m in Sources */,
 				124D72FD1AA67DB20062F81B /* MyShowsViewController.m in Sources */,
 				128930D61AA494230087A700 /* SingleProductDetailViewController.m in Sources */,
