@@ -38,6 +38,13 @@
 }
 */
 - (IBAction)onSegmentedChanged:(id)sender {
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        self.compositeProductView.hidden = NO;
+        self.singleProductView.hidden = YES;
+    }else if(self.segmentedControl.selectedSegmentIndex == 1){
+        self.singleProductView.hidden = NO;
+        self.compositeProductView.hidden = YES;
+    }
     
 }
 
