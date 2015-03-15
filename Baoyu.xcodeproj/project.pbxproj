@@ -71,6 +71,7 @@
 		12F904C71AB5816900C68C7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F904C61AB5816900C68C7C /* SystemConfiguration.framework */; };
 		12F904C91AB5817100C68C7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F904C81AB5817100C68C7C /* CoreLocation.framework */; };
 		12F904CB1AB5817F00C68C7C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F904CA1AB5817F00C68C7C /* MobileCoreServices.framework */; };
+		12F904D01AB5870E00C68C7C /* AFAppSharedAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F904CF1AB5870E00C68C7C /* AFAppSharedAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,8 @@
 		12F904C61AB5816900C68C7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		12F904C81AB5817100C68C7C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		12F904CA1AB5817F00C68C7C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		12F904CE1AB5870E00C68C7C /* AFAppSharedAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppSharedAPIClient.h; sourceTree = "<group>"; };
+		12F904CF1AB5870E00C68C7C /* AFAppSharedAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppSharedAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,8 @@
 		1289309A1A9C379F0087A700 /* Baoyu */ = {
 			isa = PBXGroup;
 			children = (
+				12F904CE1AB5870E00C68C7C /* AFAppSharedAPIClient.h */,
+				12F904CF1AB5870E00C68C7C /* AFAppSharedAPIClient.m */,
 				12F904861AB580D300C68C7C /* 3p */,
 				128930C11AA488DE0087A700 /* Models */,
 				1289309F1A9C379F0087A700 /* AppDelegate.h */,
@@ -535,6 +540,7 @@
 				12F904A21AB580E500C68C7C /* AFURLResponseSerialization.m in Sources */,
 				124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */,
 				12F904BA1AB580ED00C68C7C /* UIImageView+AFNetworking.m in Sources */,
+				12F904D01AB5870E00C68C7C /* AFAppSharedAPIClient.m in Sources */,
 				12F904BD1AB580ED00C68C7C /* UIWebView+AFNetworking.m in Sources */,
 				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
 				124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */,

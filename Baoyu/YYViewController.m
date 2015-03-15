@@ -7,7 +7,9 @@
 //
 
 #import "YYViewController.h"
-#import "AFNetworking/AFNetworking.h"
+#import "Product.h"
+#import "UIAlertView+AFNetworking.h"
+
 
 @interface YYViewController ()
 @property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
@@ -22,13 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://localhost:3000/products" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+    NSURLSessionTask *task = [Product getAllProductsWithBlock:^(NSArray *posts, NSError *error) {
+        if (!error) {
+         //   self.posts = posts;
+         //   [self.tableView reloadData];
+        }
     }];
+    
+//    [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
+//    [self.refreshControl setRefreshingWithStateOfTask:task];
     
 }
 
