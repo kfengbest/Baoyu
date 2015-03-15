@@ -72,6 +72,9 @@
 		12F904C91AB5817100C68C7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F904C81AB5817100C68C7C /* CoreLocation.framework */; };
 		12F904CB1AB5817F00C68C7C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F904CA1AB5817F00C68C7C /* MobileCoreServices.framework */; };
 		12F904D01AB5870E00C68C7C /* AFAppSharedAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F904CF1AB5870E00C68C7C /* AFAppSharedAPIClient.m */; };
+		12F904D31AB5A6C100C68C7C /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F904D21AB5A6C100C68C7C /* Comment.m */; };
+		12F904D61AB5A6D700C68C7C /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F904D51AB5A6D700C68C7C /* Vote.m */; };
+		12F904D91AB5A6E800C68C7C /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F904D81AB5A6E800C68C7C /* Favorite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +198,12 @@
 		12F904CA1AB5817F00C68C7C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		12F904CE1AB5870E00C68C7C /* AFAppSharedAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppSharedAPIClient.h; sourceTree = "<group>"; };
 		12F904CF1AB5870E00C68C7C /* AFAppSharedAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppSharedAPIClient.m; sourceTree = "<group>"; };
+		12F904D11AB5A6C100C68C7C /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		12F904D21AB5A6C100C68C7C /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		12F904D41AB5A6D700C68C7C /* Vote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vote.h; sourceTree = "<group>"; };
+		12F904D51AB5A6D700C68C7C /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
+		12F904D71AB5A6E800C68C7C /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
+		12F904D81AB5A6E800C68C7C /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +350,12 @@
 				128930C31AA489190087A700 /* Product.m */,
 				12F903BB1AB557E100C68C7C /* User.h */,
 				12F903BC1AB557E100C68C7C /* User.m */,
+				12F904D11AB5A6C100C68C7C /* Comment.h */,
+				12F904D21AB5A6C100C68C7C /* Comment.m */,
+				12F904D41AB5A6D700C68C7C /* Vote.h */,
+				12F904D51AB5A6D700C68C7C /* Vote.m */,
+				12F904D71AB5A6E800C68C7C /* Favorite.h */,
+				12F904D81AB5A6E800C68C7C /* Favorite.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -537,12 +552,14 @@
 				128930A41A9C379F0087A700 /* ViewController.m in Sources */,
 				12F904B71AB580ED00C68C7C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				12F9049B1AB580E500C68C7C /* AFHTTPRequestOperation.m in Sources */,
+				12F904D91AB5A6E800C68C7C /* Favorite.m in Sources */,
 				12F904A21AB580E500C68C7C /* AFURLResponseSerialization.m in Sources */,
 				124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */,
 				12F904BA1AB580ED00C68C7C /* UIImageView+AFNetworking.m in Sources */,
 				12F904D01AB5870E00C68C7C /* AFAppSharedAPIClient.m in Sources */,
 				12F904BD1AB580ED00C68C7C /* UIWebView+AFNetworking.m in Sources */,
 				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
+				12F904D61AB5A6D700C68C7C /* Vote.m in Sources */,
 				124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */,
 				124D73051AA730280062F81B /* KnowledgeViewController.m in Sources */,
 				12F903BD1AB557E100C68C7C /* User.m in Sources */,
@@ -561,6 +578,7 @@
 				12F9049C1AB580E500C68C7C /* AFHTTPRequestOperationManager.m in Sources */,
 				12F904A11AB580E500C68C7C /* AFURLRequestSerialization.m in Sources */,
 				124D72F41AA67D540062F81B /* SetMyFeatureViewController.m in Sources */,
+				12F904D31AB5A6C100C68C7C /* Comment.m in Sources */,
 				128930C41AA489190087A700 /* Product.m in Sources */,
 				12F904B81AB580ED00C68C7C /* UIAlertView+AFNetworking.m in Sources */,
 				124D73131AA89A3C0062F81B /* LikesInProductDetailViewController.m in Sources */,

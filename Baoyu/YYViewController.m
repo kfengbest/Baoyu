@@ -25,14 +25,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    
+/*
     NSURLSessionTask *task = [Product getAllProductsWithBlock:^(NSArray *posts, NSError *error) {
         if (!error) {
          //   self.posts = posts;
          //   [self.tableView reloadData];
         }
     }];
-    
+  
+*/ 
+ 
 //    [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
 //    [self.refreshControl setRefreshingWithStateOfTask:task];
     

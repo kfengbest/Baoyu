@@ -8,7 +8,9 @@
 
 #import "Product.h"
 #import "AFAppSharedAPIClient.h"
-#import "User.h"
+#import "Comment.h"
+#import "Vote.h"
+#import "Favorite.h"
 
 @implementation Product
 
@@ -19,15 +21,54 @@
     }
     
     self.pID = [attributes valueForKeyPath:@"_id"];
+    self.sku = [attributes valueForKeyPath:@"sku"];
     self.title = [attributes valueForKeyPath:@"title"];
     self.shortDescription = [attributes valueForKeyPath:@"description"];
     self.longDescription = [attributes valueForKeyPath:@"longDescription"];
+    self.thumbnail = [attributes valueForKeyPath:@"thumbnail"];
+    self.origin = [attributes valueForKeyPath:@"origin"];
+
+    self.state = [attributes valueForKeyPath:@"state"];
+    self.categories = [attributes valueForKeyPath:@"categories"];
     self.material = [attributes valueForKeyPath:@"material"];
+    self.gemType = [attributes valueForKeyPath:@"gemType"];
+    self.gemSize = [attributes valueForKeyPath:@"gemSize"];
+    self.gemColor = [attributes valueForKeyPath:@"gemColor"];
+    self.style = [attributes valueForKeyPath:@"style"];
+    self.size = [attributes valueForKeyPath:@"size"];
+    self.wight = [attributes valueForKeyPath:@"wight"];
+    self.insetMaterial = [attributes valueForKeyPath:@"insetMaterial"];
+    self.content = [attributes valueForKeyPath:@"content"];
+    self.certificateID = [attributes valueForKeyPath:@"certificateID"];
+    self.certificateImage = [attributes valueForKeyPath:@"certificateImage"];
+    self.suitTypes = [attributes valueForKeyPath:@"suitTypes"];
+    self.packageInfo = [attributes valueForKeyPath:@"packageInfo"];
+    
     self.price = [[attributes valueForKeyPath:@"price"] floatValue];
     self.priceInMarket = [[attributes valueForKeyPath:@"priceInMarket"] floatValue];
-    self.weight = [[attributes valueForKeyPath:@"weight"] floatValue];
+    self.discount = [[attributes valueForKeyPath:@"discount"] floatValue];
 
-   // self.user = [[User alloc] initWithAttributes:[attributes valueForKeyPath:@"user"]];
+    self.scenarios = [[attributes valueForKey:@"scenarios"] array];
+    self.keywords = [[attributes valueForKey:@"keywords"] array];
+    self.usages = [[attributes valueForKey:@"usages"] array];
+    self.details = [[attributes valueForKey:@"detail"] array];
+
+    NSArray* commentsArr = [[attributes valueForKey:@"comments"] array];
+    for (NSDictionary* dic in commentsArr) {
+        Comment* obj = [[Comment alloc] initWithAttributes:dic];
+        [self.comments addObject:obj];
+    }
+    NSArray* votesArr = [[attributes valueForKey:@"votes"] array];
+    for (NSDictionary* dic in votesArr) {
+        Vote* obj = [[Vote alloc] initWithAttributes:dic];
+        [self.votes addObject:obj];
+    }
+    NSArray* favoritesArr = [[attributes valueForKey:@"favorites"] array];
+    for (NSDictionary* dic in favoritesArr) {
+        Favorite* obj = [[Favorite alloc] initWithAttributes:dic];
+        [self.favorites addObject:obj];
+    }
+    
     
     return self;
 }
