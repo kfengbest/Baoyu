@@ -46,6 +46,7 @@
 		128930EA1AA5EA7A0087A700 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930E91AA5EA7A0087A700 /* cross.png */; };
 		128930EC1AA5EB670087A700 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930EB1AA5EB670087A700 /* setting.png */; };
 		128930EE1AA5EBEA0087A700 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 128930ED1AA5EBEA0087A700 /* camera.png */; };
+		12F903BD1AB557E100C68C7C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F903BC1AB557E100C68C7C /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		128930E91AA5EA7A0087A700 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		128930EB1AA5EB670087A700 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		128930ED1AA5EBEA0087A700 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		12F903BB1AB557E100C68C7C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		12F903BC1AB557E100C68C7C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +166,7 @@
 		1289309A1A9C379F0087A700 /* Baoyu */ = {
 			isa = PBXGroup;
 			children = (
-				128930C11AA488DE0087A700 /* Model */,
+				128930C11AA488DE0087A700 /* Models */,
 				1289309F1A9C379F0087A700 /* AppDelegate.h */,
 				128930A01A9C379F0087A700 /* AppDelegate.m */,
 				128930A21A9C379F0087A700 /* ViewController.h */,
@@ -250,13 +253,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		128930C11AA488DE0087A700 /* Model */ = {
+		128930C11AA488DE0087A700 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				128930C21AA489190087A700 /* Product.h */,
 				128930C31AA489190087A700 /* Product.m */,
+				12F903BB1AB557E100C68C7C /* User.h */,
+				12F903BC1AB557E100C68C7C /* User.m */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +384,7 @@
 				128930D01AA48A240087A700 /* AboutViewController.m in Sources */,
 				124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */,
 				124D73051AA730280062F81B /* KnowledgeViewController.m in Sources */,
+				12F903BD1AB557E100C68C7C /* User.m in Sources */,
 				124D73101AA888100062F81B /* SingleProductViewController.m in Sources */,
 				124D72F71AA67D7E0062F81B /* MyOrderViewController.m in Sources */,
 				128930CD1AA48A150087A700 /* MeViewController.m in Sources */,
