@@ -828,7 +828,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YY" id="wPr-4I-P5p">
-                        <barButtonItem key="rightBarButtonItem" image="setting.png" id="99d-qw-dc5"/>
+                        <barButtonItem key="rightBarButtonItem" image="setting.png" id="99d-qw-dc5">
+                            <connections>
+                                <action selector="onSharing:" destination="AEq-IL-bxx" id="Z4G-XQ-ezc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="compositeProductView" destination="NB1-pP-ABx" id="tNX-p7-jaO"/>
