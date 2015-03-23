@@ -43,7 +43,7 @@
 		124D73051AA730280062F81B /* KnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73041AA730280062F81B /* KnowledgeViewController.m */; };
 		124D73081AA7316A0062F81B /* CustomersShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73071AA7316A0062F81B /* CustomersShowViewController.m */; };
 		124D730A1AA884000062F81B /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 124D73091AA884000062F81B /* more.png */; };
-		124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D730C1AA8849B0062F81B /* CompositeProductViewController.m */; };
+		124D730D1AA8849B0062F81B /* SuitProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D730C1AA8849B0062F81B /* SuitProductViewController.m */; };
 		124D73101AA888100062F81B /* SingleProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D730F1AA888100062F81B /* SingleProductViewController.m */; };
 		124D73131AA89A3C0062F81B /* LikesInProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73121AA89A3C0062F81B /* LikesInProductDetailViewController.m */; };
 		124D73161AA89A530062F81B /* CommentsInProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D73151AA89A530062F81B /* CommentsInProductDetailsViewController.m */; };
@@ -162,8 +162,8 @@
 		124D73061AA7316A0062F81B /* CustomersShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomersShowViewController.h; sourceTree = "<group>"; };
 		124D73071AA7316A0062F81B /* CustomersShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomersShowViewController.m; sourceTree = "<group>"; };
 		124D73091AA884000062F81B /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
-		124D730B1AA8849B0062F81B /* CompositeProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeProductViewController.h; sourceTree = "<group>"; };
-		124D730C1AA8849B0062F81B /* CompositeProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeProductViewController.m; sourceTree = "<group>"; };
+		124D730B1AA8849B0062F81B /* SuitProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuitProductViewController.h; sourceTree = "<group>"; };
+		124D730C1AA8849B0062F81B /* SuitProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuitProductViewController.m; sourceTree = "<group>"; };
 		124D730E1AA888100062F81B /* SingleProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleProductViewController.h; sourceTree = "<group>"; };
 		124D730F1AA888100062F81B /* SingleProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleProductViewController.m; sourceTree = "<group>"; };
 		124D73111AA89A3C0062F81B /* LikesInProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikesInProductDetailViewController.h; sourceTree = "<group>"; };
@@ -433,8 +433,8 @@
 				124D73151AA89A530062F81B /* CommentsInProductDetailsViewController.m */,
 				124D730E1AA888100062F81B /* SingleProductViewController.h */,
 				124D730F1AA888100062F81B /* SingleProductViewController.m */,
-				124D730B1AA8849B0062F81B /* CompositeProductViewController.h */,
-				124D730C1AA8849B0062F81B /* CompositeProductViewController.m */,
+				124D730B1AA8849B0062F81B /* SuitProductViewController.h */,
+				124D730C1AA8849B0062F81B /* SuitProductViewController.m */,
 				124D73031AA730280062F81B /* KnowledgeViewController.h */,
 				124D73041AA730280062F81B /* KnowledgeViewController.m */,
 				128930A81A9C379F0087A700 /* Images.xcassets */,
@@ -735,7 +735,7 @@
 				12F9049B1AB580E500C68C7C /* AFHTTPRequestOperation.m in Sources */,
 				12F904D91AB5A6E800C68C7C /* Favorite.m in Sources */,
 				12F904A21AB580E500C68C7C /* AFURLResponseSerialization.m in Sources */,
-				124D730D1AA8849B0062F81B /* CompositeProductViewController.m in Sources */,
+				124D730D1AA8849B0062F81B /* SuitProductViewController.m in Sources */,
 				12F904BA1AB580ED00C68C7C /* UIImageView+AFNetworking.m in Sources */,
 				12F904D01AB5870E00C68C7C /* AFAppSharedAPIClient.m in Sources */,
 				12F904BD1AB580ED00C68C7C /* UIWebView+AFNetworking.m in Sources */,

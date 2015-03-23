@@ -8,6 +8,12 @@
 
 #import "SingleProductViewController.h"
 
+@implementation CellInSingleProduct
+
+@end
+
+
+
 @interface SingleProductViewController ()
 
 @end

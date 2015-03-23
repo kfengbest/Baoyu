@@ -6,13 +6,19 @@
 //  Copyright (c) 2015 Kaven Feng. All rights reserved.
 //
 
-#import "CompositeProductViewController.h"
+#import "SuitProductViewController.h"
 
-@interface CompositeProductViewController ()
+@implementation CellInSuitProductCollectionViewCell
 
 @end
 
-@implementation CompositeProductViewController
+//--------------------------------------------------------------
+
+@interface SuitProductViewController ()
+
+@end
+
+@implementation SuitProductViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
