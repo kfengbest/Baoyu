@@ -828,7 +828,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YY" id="wPr-4I-P5p">
-                        <barButtonItem key="rightBarButtonItem" image="setting.png" id="99d-qw-dc5">
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="99d-qw-dc5">
                             <connections>
                                 <action selector="onSharing:" destination="AEq-IL-bxx" id="Z4G-XQ-ezc"/>
                             </connections>
@@ -1038,7 +1038,7 @@
         <scene sceneID="GDl-wr-Wm8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xJK-Qo-hhw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="YY" id="1Xb-8J-zjR"/>
+                    <tabBarItem key="tabBarItem" title="YY" image="tab_yy_normal" id="1Xb-8J-zjR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aVZ-Rp-sbT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1057,7 +1057,7 @@
         <scene sceneID="PEL-nA-BbN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vdg-fM-zbO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="得瑟" id="kvg-MA-tMg"/>
+                    <tabBarItem key="tabBarItem" title="得瑟" image="tab_show_normal" id="kvg-MA-tMg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6fS-Fp-Rfr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1076,7 +1076,7 @@
         <scene sceneID="uMt-8p-r3q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jDl-8y-cfD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="购物车" id="oGa-Tv-7w7"/>
+                    <tabBarItem key="tabBarItem" title="购物车" image="tab_cart_normal" id="oGa-Tv-7w7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r2q-6N-lDi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1095,7 +1095,7 @@
         <scene sceneID="PI2-ez-CmM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0G1-HK-43i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="b67-OE-HXB"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_me_normal" id="b67-OE-HXB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Yq-sI-9zl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1938,6 +1938,7 @@
         <image name="camera.png" width="50" height="50"/>
         <image name="check.png" width="50" height="50"/>
         <image name="favory.png" width="50" height="50"/>
+        <image name="filter" width="20" height="20"/>
         <image name="like.png" width="50" height="50"/>
         <image name="more.png" width="50" height="50"/>
         <image name="product1.jpg" width="750" height="750"/>
@@ -1945,7 +1946,10 @@
         <image name="product3.jpg" width="750" height="750"/>
         <image name="product4.jpg" width="750" height="750"/>
         <image name="profile.png" width="50" height="50"/>
-        <image name="setting.png" width="50" height="50"/>
+        <image name="tab_cart_normal" width="25" height="25"/>
+        <image name="tab_me_normal" width="25" height="25"/>
+        <image name="tab_show_normal" width="25" height="25"/>
+        <image name="tab_yy_normal" width="25" height="25"/>
         <image name="trash.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
