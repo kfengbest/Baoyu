@@ -9,6 +9,7 @@
 #import "LikesInProductDetailViewController.h"
 
 @interface LikesInProductDetailViewController ()
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 

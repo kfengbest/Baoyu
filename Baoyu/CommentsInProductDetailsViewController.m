@@ -9,6 +9,7 @@
 #import "CommentsInProductDetailsViewController.h"
 
 @interface CommentsInProductDetailsViewController ()
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
