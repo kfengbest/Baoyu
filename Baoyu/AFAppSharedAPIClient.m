@@ -22,7 +22,6 @@
 
 #import "AFAppSharedAPIClient.h"
 
-//static NSString * const AFAppSharedAPIBaseURLString = @"https://api.app.net/";
 static NSString * const AFAppSharedAPIBaseURLString = @"http://localhost:3000";
 
 @implementation AFAppSharedAPIClient

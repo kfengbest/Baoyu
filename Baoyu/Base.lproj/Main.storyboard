@@ -1569,28 +1569,36 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompositedCell1" id="QqC-hm-dE6">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellInSuitProductCollectionViewCell" id="QqC-hm-dE6" customClass="CellInSuitProductCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="316"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="339"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rng-ah-nQe">
-                                                    <rect key="frame" x="0.0" y="3" width="146.5" height="126"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="129"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="129" id="oFb-x2-Gwi"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ke-hT-PEk">
-                                                    <rect key="frame" x="0.0" y="130" width="146.5" height="125.5"/>
+                                                    <rect key="frame" x="0.0" y="130" width="148.5" height="151"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="C20-IB-L7B">
-                                                    <rect key="frame" x="148" y="3" width="147" height="253"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uFT-se-q3w">
+                                                    <rect key="frame" x="151" y="128" width="148.5" height="153"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-Mx-8Jn">
-                                                    <rect key="frame" x="264" y="274" width="31" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天然的彩石，很好看" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O08-wm-eZl">
+                                                    <rect key="frame" x="8" y="284" width="250.5" height="47"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="31" id="hyB-zl-vQ6"/>
-                                                        <constraint firstAttribute="height" constant="27" id="iY0-P3-dkw"/>
+                                                        <constraint firstAttribute="height" constant="47" id="Mzp-0m-DhR"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-Mx-8Jn">
+                                                    <rect key="frame" x="261" y="292" width="31" height="27"/>
                                                     <state key="normal" image="more.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1598,35 +1606,38 @@
                                                         <segue destination="rds-5g-NNh" kind="show" id="YL5-ie-eFS"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="天然的彩石，很好看" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O08-wm-eZl">
-                                                    <rect key="frame" x="0.0" y="265" width="250.5" height="43"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="Rng-ah-nQe" firstAttribute="top" secondItem="QqC-hm-dE6" secondAttribute="topMargin" constant="-5" id="1Ck-LT-ZRN"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="wGo-Mx-8Jn" secondAttribute="trailing" constant="-3" id="21P-wX-rXB"/>
-                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="width" secondItem="Rng-ah-nQe" secondAttribute="width" id="7VJ-16-gRN"/>
-                                            <constraint firstItem="O08-wm-eZl" firstAttribute="bottom" secondItem="QqC-hm-dE6" secondAttribute="bottomMargin" id="8Sa-nt-R5N"/>
-                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="height" secondItem="Rng-ah-nQe" secondAttribute="height" constant="-0.5" id="BVD-1h-HnS"/>
-                                            <constraint firstItem="C20-IB-L7B" firstAttribute="leading" secondItem="Rng-ah-nQe" secondAttribute="trailing" constant="2" id="FdI-aF-QHy"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="C20-IB-L7B" secondAttribute="trailing" constant="-3" id="Kd3-JF-nQL"/>
-                                            <constraint firstItem="C20-IB-L7B" firstAttribute="bottom" secondItem="8ke-hT-PEk" secondAttribute="bottom" id="LG4-hh-vU4"/>
-                                            <constraint firstItem="Rng-ah-nQe" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" constant="-8" id="O00-JL-WYp"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="O08-wm-eZl" secondAttribute="trailing" constant="41.5" id="RMj-I3-b71"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="C20-IB-L7B" secondAttribute="bottom" constant="52" id="TlT-Bk-lIz"/>
-                                            <constraint firstItem="O08-wm-eZl" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" constant="-8" id="To9-xo-sp9"/>
-                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="top" secondItem="Rng-ah-nQe" secondAttribute="bottom" constant="1" id="WTl-5M-k6d"/>
-                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" constant="-8" id="dWc-BO-BbX"/>
-                                            <constraint firstItem="C20-IB-L7B" firstAttribute="width" secondItem="Rng-ah-nQe" secondAttribute="width" id="dfI-6d-UYu"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="wGo-Mx-8Jn" secondAttribute="bottom" constant="7" id="wud-26-Pcn"/>
-                                            <constraint firstItem="C20-IB-L7B" firstAttribute="top" secondItem="QqC-hm-dE6" secondAttribute="topMargin" constant="-5" id="zKv-3L-aIl"/>
+                                            <constraint firstItem="O08-wm-eZl" firstAttribute="top" secondItem="8ke-hT-PEk" secondAttribute="bottom" constant="5" id="22h-qy-CMU"/>
+                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" constant="-8" id="7en-LR-fAg"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="uFT-se-q3w" secondAttribute="trailing" constant="-8" id="AOx-LV-6C5"/>
+                                            <constraint firstItem="O08-wm-eZl" firstAttribute="top" secondItem="uFT-se-q3w" secondAttribute="bottom" constant="3" id="DzU-r8-8dD"/>
+                                            <constraint firstItem="uFT-se-q3w" firstAttribute="leading" secondItem="8ke-hT-PEk" secondAttribute="trailing" constant="3" id="GOS-zt-Wyb"/>
+                                            <constraint firstItem="Rng-ah-nQe" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" constant="-8" id="IEp-1k-G7N"/>
+                                            <constraint firstItem="O08-wm-eZl" firstAttribute="leading" secondItem="QqC-hm-dE6" secondAttribute="leadingMargin" id="KR2-hy-fg6"/>
+                                            <constraint firstItem="O08-wm-eZl" firstAttribute="bottom" secondItem="QqC-hm-dE6" secondAttribute="bottomMargin" id="Og5-LL-FZI"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="O08-wm-eZl" secondAttribute="trailing" constant="33.5" id="UpT-MF-w4w"/>
+                                            <constraint firstItem="uFT-se-q3w" firstAttribute="top" secondItem="Rng-ah-nQe" secondAttribute="bottom" constant="-1" id="bRq-lK-aQT"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Rng-ah-nQe" secondAttribute="trailing" constant="-8" id="isW-Ub-He4"/>
+                                            <constraint firstItem="Rng-ah-nQe" firstAttribute="top" secondItem="QqC-hm-dE6" secondAttribute="topMargin" constant="-8" id="od1-hk-9yy"/>
+                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="width" secondItem="uFT-se-q3w" secondAttribute="width" id="uqD-cr-G6X"/>
+                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="height" secondItem="uFT-se-q3w" secondAttribute="height" constant="-2" id="vNZ-ei-UI2"/>
+                                            <constraint firstItem="8ke-hT-PEk" firstAttribute="top" secondItem="Rng-ah-nQe" secondAttribute="bottom" constant="1" id="xI2-vr-KuU"/>
                                         </constraints>
-                                        <size key="customSize" width="300" height="316"/>
+                                        <size key="customSize" width="300" height="339"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="22h-qy-CMU"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="shortDescription" destination="O08-wm-eZl" id="z9D-W8-tUV"/>
+                                            <outlet property="showDetails" destination="wGo-Mx-8Jn" id="K53-IZ-FtN"/>
+                                            <outlet property="thumbnail1" destination="Rng-ah-nQe" id="ryp-HN-KLQ"/>
+                                            <outlet property="thumbnail2" destination="8ke-hT-PEk" id="4xx-7j-cV5"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HJc-XK-phD">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1654,6 +1665,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="collectionView" destination="rHm-Es-6sk" id="ltR-Mi-lwf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LSE-Sy-aqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1980,6 +1994,6 @@
         <image name="trash.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RnN-1C-dsg"/>
+        <segue reference="YL5-ie-eFS"/>
     </inferredMetricsTieBreakers>
 </document>

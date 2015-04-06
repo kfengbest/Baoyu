@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CellInSuitProductCollectionViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *thumbnail1;
+@property (strong, nonatomic) IBOutlet UIImageView *thumbnail2;
+@property (strong, nonatomic) IBOutlet UIImageView *thumbnail3;
+@property (strong, nonatomic) IBOutlet UILabel *shortDescription;
+@property (strong, nonatomic) IBOutlet UIButton *showDetails;
 
 @end
 
