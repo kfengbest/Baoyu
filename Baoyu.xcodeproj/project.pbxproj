@@ -34,6 +34,7 @@
 		121A7A291AC036210079A6BD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A7A281AC036210079A6BD /* MessageUI.framework */; };
 		121A7A2B1AC036390079A6BD /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A7A2A1AC036390079A6BD /* libstdc++.dylib */; };
 		121A7A2D1AC036430079A6BD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 121A7A2C1AC036430079A6BD /* libsqlite3.dylib */; };
+		122373F01AD2B1AB00E59EDD /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 122373EF1AD2B1AB00E59EDD /* Order.m */; };
 		124D72F41AA67D540062F81B /* SetMyFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F31AA67D540062F81B /* SetMyFeatureViewController.m */; };
 		124D72F71AA67D7E0062F81B /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F61AA67D7E0062F81B /* MyOrderViewController.m */; };
 		124D72FA1AA67D990062F81B /* MyFavoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124D72F91AA67D990062F81B /* MyFavoriesViewController.m */; };
@@ -146,6 +147,8 @@
 		121A7A281AC036210079A6BD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		121A7A2A1AC036390079A6BD /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		121A7A2C1AC036430079A6BD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		122373EE1AD2B1AB00E59EDD /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		122373EF1AD2B1AB00E59EDD /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 		124D72F21AA67D540062F81B /* SetMyFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetMyFeatureViewController.h; sourceTree = "<group>"; };
 		124D72F31AA67D540062F81B /* SetMyFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetMyFeatureViewController.m; sourceTree = "<group>"; };
 		124D72F51AA67D7E0062F81B /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
@@ -521,6 +524,8 @@
 				12F904D51AB5A6D700C68C7C /* Vote.m */,
 				12F904D71AB5A6E800C68C7C /* Favorite.h */,
 				12F904D81AB5A6E800C68C7C /* Favorite.m */,
+				122373EE1AD2B1AB00E59EDD /* Order.h */,
+				122373EF1AD2B1AB00E59EDD /* Order.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -771,6 +776,7 @@
 				128930D61AA494230087A700 /* SingleProductDetailViewController.m in Sources */,
 				124D72FA1AA67D990062F81B /* MyFavoriesViewController.m in Sources */,
 				128930CA1AA48A010087A700 /* CartViewController.m in Sources */,
+				122373F01AD2B1AB00E59EDD /* Order.m in Sources */,
 				1289309E1A9C379F0087A700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
