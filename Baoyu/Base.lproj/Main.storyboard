@@ -1681,7 +1681,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SingleProductCell" id="a1p-R0-eLm">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellInSingleProduct" id="a1p-R0-eLm" customClass="CellInSingleProduct">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1708,7 +1708,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-xl-TXC">
-                                                    <rect key="frame" x="-27" y="180" width="134" height="19.5"/>
+                                                    <rect key="frame" x="-16" y="178" width="134" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1718,20 +1718,24 @@
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="top" secondItem="t1v-gE-7Za" secondAttribute="bottom" constant="13" id="2PK-WP-cEH"/>
+                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="top" secondItem="t1v-gE-7Za" secondAttribute="bottom" constant="11" id="2PK-WP-cEH"/>
                                             <constraint firstItem="t1v-gE-7Za" firstAttribute="leading" secondItem="a1p-R0-eLm" secondAttribute="leadingMargin" constant="-8" id="IyQ-qj-nj9"/>
                                             <constraint firstItem="FXn-N3-Az0" firstAttribute="top" secondItem="t1v-gE-7Za" secondAttribute="bottom" constant="9" id="LNL-iH-QsD"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="mBw-8i-2ea" secondAttribute="bottom" constant="-8" id="NBz-xj-iQM"/>
                                             <constraint firstItem="FXn-N3-Az0" firstAttribute="trailing" secondItem="a1p-R0-eLm" secondAttribute="trailingMargin" id="Ode-xN-I39"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="t1v-gE-7Za" secondAttribute="trailing" constant="-8" id="TSv-C3-Ig8"/>
                                             <constraint firstItem="mBw-8i-2ea" firstAttribute="trailing" secondItem="a1p-R0-eLm" secondAttribute="trailingMargin" constant="8" id="U7B-Tp-ugi"/>
-                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="leading" secondItem="a1p-R0-eLm" secondAttribute="leadingMargin" constant="-35" id="bXr-Wi-svi"/>
+                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="leading" secondItem="a1p-R0-eLm" secondAttribute="leadingMargin" constant="-24" id="bXr-Wi-svi"/>
                                             <constraint firstItem="mBw-8i-2ea" firstAttribute="leading" secondItem="a1p-R0-eLm" secondAttribute="leadingMargin" id="dCS-ne-96c"/>
                                             <constraint firstItem="mBw-8i-2ea" firstAttribute="top" secondItem="t1v-gE-7Za" secondAttribute="bottom" constant="38" id="eAe-AQ-xVe"/>
-                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="trailing" secondItem="a1p-R0-eLm" secondAttribute="trailingMargin" constant="-185" id="k8T-rM-34v"/>
+                                            <constraint firstItem="oGI-xl-TXC" firstAttribute="trailing" secondItem="a1p-R0-eLm" secondAttribute="trailingMargin" constant="-174" id="k8T-rM-34v"/>
                                             <constraint firstItem="t1v-gE-7Za" firstAttribute="top" secondItem="a1p-R0-eLm" secondAttribute="topMargin" constant="-8" id="yr8-ld-ovJ"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="createdDate" destination="FXn-N3-Az0" id="gaF-nC-4MV"/>
+                                            <outlet property="price" destination="oGI-xl-TXC" id="4zT-4k-lUB"/>
+                                            <outlet property="shortDescription" destination="mBw-8i-2ea" id="B07-eX-b2z"/>
+                                            <outlet property="thumbnail" destination="t1v-gE-7Za" id="LqC-Bp-9nH"/>
                                             <segue destination="rds-5g-NNh" kind="show" id="RnN-1C-dsg"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1751,6 +1755,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="collectionView" destination="Qrt-0E-Vcx" id="wsh-ZR-cWp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnO-9G-uSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

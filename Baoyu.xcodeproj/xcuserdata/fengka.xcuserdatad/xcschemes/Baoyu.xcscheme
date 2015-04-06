@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "128930971A9C379F0087A700"
-               BuildableName = "Baoyu.app"
-               BlueprintName = "Baoyu"
+               BuildableName = "BaoYu.app"
+               BlueprintName = "BaoYu"
                ReferencedContainer = "container:Baoyu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "128930971A9C379F0087A700"
-            BuildableName = "Baoyu.app"
-            BlueprintName = "Baoyu"
+            BuildableName = "BaoYu.app"
+            BlueprintName = "BaoYu"
             ReferencedContainer = "container:Baoyu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "128930971A9C379F0087A700"
-            BuildableName = "Baoyu.app"
-            BlueprintName = "Baoyu"
+            BuildableName = "BaoYu.app"
+            BlueprintName = "BaoYu"
             ReferencedContainer = "container:Baoyu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "128930971A9C379F0087A700"
-            BuildableName = "Baoyu.app"
-            BlueprintName = "Baoyu"
+            BuildableName = "BaoYu.app"
+            BlueprintName = "BaoYu"
             ReferencedContainer = "container:Baoyu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

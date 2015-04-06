@@ -48,32 +48,32 @@
     self.priceInMarket = [[attributes valueForKeyPath:@"priceInMarket"] floatValue];
     self.discount = [[attributes valueForKeyPath:@"discount"] floatValue];
 
-    self.scenarios = [[attributes valueForKey:@"scenarios"] array];
-    self.keywords = [[attributes valueForKey:@"keywords"] array];
-    self.usages = [[attributes valueForKey:@"usages"] array];
-    self.details = [[attributes valueForKey:@"detail"] array];
+    //self.scenarios = [[attributes valueForKey:@"scenarios"] array];
+    //self.keywords = [[attributes valueForKey:@"keywords"] array];
+    //self.usages = [[attributes valueForKey:@"usages"] array];
+    //self.details = [[attributes valueForKey:@"detail"] array];
 
-    NSArray* commentsArr = [[attributes valueForKey:@"comments"] array];
-    for (NSDictionary* dic in commentsArr) {
-        Comment* obj = [[Comment alloc] initWithAttributes:dic];
-        [self.comments addObject:obj];
-    }
-    NSArray* votesArr = [[attributes valueForKey:@"votes"] array];
-    for (NSDictionary* dic in votesArr) {
-        Vote* obj = [[Vote alloc] initWithAttributes:dic];
-        [self.votes addObject:obj];
-    }
-    NSArray* favoritesArr = [[attributes valueForKey:@"favorites"] array];
-    for (NSDictionary* dic in favoritesArr) {
-        Favorite* obj = [[Favorite alloc] initWithAttributes:dic];
-        [self.favorites addObject:obj];
-    }
+//    NSArray* commentsArr = [[attributes valueForKey:@"comments"] array];
+//    for (NSDictionary* dic in commentsArr) {
+//        Comment* obj = [[Comment alloc] initWithAttributes:dic];
+//        [self.comments addObject:obj];
+//    }
+//    NSArray* votesArr = [[attributes valueForKey:@"votes"] array];
+//    for (NSDictionary* dic in votesArr) {
+//        Vote* obj = [[Vote alloc] initWithAttributes:dic];
+//        [self.votes addObject:obj];
+//    }
+//    NSArray* favoritesArr = [[attributes valueForKey:@"favorites"] array];
+//    for (NSDictionary* dic in favoritesArr) {
+//        Favorite* obj = [[Favorite alloc] initWithAttributes:dic];
+//        [self.favorites addObject:obj];
+//    }
     
     
     return self;
 }
 
-+ (NSURLSessionDataTask *)getAllProductsWithBlock:(void (^)(NSArray *posts, NSError *error))block {
++ (NSURLSessionDataTask *)getAllProductsWithBlock:(void (^)(NSArray *products, NSError *error))block {
     return [[AFAppSharedAPIClient sharedClient] GET:@"/products" parameters:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
 
         NSLog(@"JSON: %@", JSON);
@@ -87,21 +87,6 @@
         if (block) {
             block([NSArray arrayWithArray:mutablePros], nil);
         }
-        
-     /*
-        NSArray *postsFromResponse = [JSON valueForKeyPath:@"data"];
-        NSMutableArray *mutablePosts = [NSMutableArray arrayWithCapacity:[postsFromResponse count]];
-        for (NSDictionary *attributes in postsFromResponse) {
-            
-//            Post *post = [[Post alloc] initWithAttributes:attributes];
-//            [mutablePosts addObject:post];
-            
-        }
-        
-        if (block) {
-            block([NSArray arrayWithArray:mutablePosts], nil);
-        }
-      */
         
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
         if (block) {

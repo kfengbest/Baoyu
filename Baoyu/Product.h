@@ -53,7 +53,7 @@
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
 
-+ (NSURLSessionDataTask *)getAllProductsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
++ (NSURLSessionDataTask *)getAllProductsWithBlock:(void (^)(NSArray *products, NSError *error))block;
 
 
 @end
