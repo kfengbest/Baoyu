@@ -7,6 +7,12 @@
 //
 
 #import "CommentsInProductDetailsViewController.h"
+#import "Comment.h"
+#import "Product.h"
+
+@implementation CellInComments
+@end
+
 
 @interface CommentsInProductDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -37,14 +43,21 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 6;
+    return [self.product.comments count];
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* MyCellID = @"CommentsInProductCell";
-    UICollectionViewCell* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
+    static NSString* MyCellID = @"CellInComments";
+    CellInComments* newCell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellID forIndexPath:indexPath];
+    
+    Comment* comment = self.product.comments[indexPath.row];
+    newCell.userAvata.image = [UIImage imageNamed:comment.userAvataUrl];
+    newCell.userName.text = comment.userName;
+    newCell.comment.text = comment.content;
+    newCell.date.text = comment.date;
+    
     return newCell;
     
 }

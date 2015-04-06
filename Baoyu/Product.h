@@ -10,8 +10,8 @@
 
 @interface Product : NSObject
 
-@property (nonatomic, assign) NSString* pID;
-@property (nonatomic, assign) NSString* sku;
+@property (nonatomic, strong) NSString* pID;
+@property (nonatomic, strong) NSString* sku;
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSString* shortDescription;
 @property (nonatomic, strong) NSString* longDescription;

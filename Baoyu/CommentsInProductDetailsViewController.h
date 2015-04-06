@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface CellInComments : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *userAvata;
+@property (strong, nonatomic) IBOutlet UILabel* userName;
+@property (strong, nonatomic) IBOutlet UILabel* comment;
+@property (strong, nonatomic) IBOutlet UILabel* date;
+@end
+
+
+@class Product;
+
 @interface CommentsInProductDetailsViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (weak, nonatomic) Product* product;
 
 @end
