@@ -22,7 +22,7 @@
 
 #import "AFAppSharedAPIClient.h"
 
-static NSString * const AFAppSharedAPIBaseURLString = @"http://localhost:3000";
+static NSString * const AFAppSharedAPIBaseURLString = @"http://ec2-52-74-41-71.ap-southeast-1.compute.amazonaws.com:3000";
 
 @implementation AFAppSharedAPIClient
 
