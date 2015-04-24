@@ -7,11 +7,12 @@
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "bg_praise_2x.png"
+      "filename" : "icon_paging_2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "icon_paging_3x.png"
     }
   ],
   "info" : {
